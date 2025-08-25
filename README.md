@@ -31,16 +31,12 @@ Display the original, lower contrast, and higher contrast images.
 Split the image (boy.jpg) into B, G, R components and display the channels
 
 ## Program Developed By:
-- **Name:** [Your Name Here]  
-- **Register Number:** [Your Register Number Here]
+- **Name:** HARIHARAN J  
+- **Register Number:** 212223240047
 
   ### Ex. No. 01
 
 #### 1. Read the image ('Eagle_in_Flight.jpg') using OpenCV imread().
-```
-Name : HARIHARAN J 
-Reg No : 212223240047
-```
 ```python
 import cv2
 import numpy as np
