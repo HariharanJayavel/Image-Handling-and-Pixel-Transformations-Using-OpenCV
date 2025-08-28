@@ -147,9 +147,11 @@ img_darker = cv2.subtract(img, matrix)
 #### 17. Display the images (Original Image, Darker Image, Brighter Image).
 ```python
 plt.figure(figsize=(10,5))
-plt.subplot(1,3,1), plt.imshow(img_rgb), plt.title("Original Image"), plt.axis("off")
-plt.subplot(1,3,2), plt.imshow(img_brighter), plt.title("Brighter Image"), plt.axis("off")
-plt.subplot(1,3,3), plt.imshow(img_darker), plt.title("Darker Image"), plt.axis("off")
+plt.plot(1,3,1), plt.imshow(img_rgb), plt.title("Original Image"), plt.axis("off")
+plt.show()
+plt.plot(1,3,2), plt.imshow(img_brighter), plt.title("Brighter Image"), plt.axis("off")
+plt.show()
+plt.plot(1,3,3), plt.imshow(img_darker), plt.title("Darker Image"), plt.axis("off")
 plt.show() 
 ```
 
@@ -164,9 +166,11 @@ img_higher2 = cv2.multiply(img.astype("float32"), matrix2).clip(0,255).astype("u
 #### 19. Display the images (Original, Lower Contrast, Higher Contrast).
 ```python
 plt.figure(figsize=(10,5))
-plt.subplot(1,3,1), plt.imshow(img), plt.title("Original Image"), plt.axis("off")
-plt.subplot(1,3,2), plt.imshow(img_higher1), plt.title("Higher Contrast (1.1x)"), plt.axis("off")
-plt.subplot(1,3,3), plt.imshow(img_higher2), plt.title("Higher Contrast (1.2x)"), plt.axis("off")
+plt.plot(1,3,1), plt.imshow(img), plt.title("Original Image"), plt.axis("off")
+plt.show()
+plt.plot(1,3,2), plt.imshow(img_higher1), plt.title("Higher Contrast (1.1x)"), plt.axis("off")
+plt.show()
+plt.plot(1,3,3), plt.imshow(img_higher2), plt.title("Higher Contrast (1.2x)"), plt.axis("off")
 plt.show()
 ```
 
@@ -195,9 +199,11 @@ plt.show()
 hsv_img = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
 h, s, v = cv2.split(hsv_img)
 plt.figure(figsize=(10,5))
-plt.subplot(1,3,1), plt.imshow(h, cmap='gray'), plt.title("Hue Channel"), plt.axis("off")
-plt.subplot(1,3,2), plt.imshow(s, cmap='gray'), plt.title("Saturation Channel"), plt.axis("off")
-plt.subplot(1,3,3), plt.imshow(v, cmap='gray'), plt.title("Value Channel"), plt.axis("off")
+plt.plot(1,3,1), plt.imshow(h, cmap='gray'), plt.title("Hue Channel"), plt.axis("off")
+plt.show()
+plt.plot(1,3,2), plt.imshow(s, cmap='gray'), plt.title("Saturation Channel"), plt.axis("off")
+plt.show()
+plt.plot(1,3,3), plt.imshow(v, cmap='gray'), plt.title("Value Channel"), plt.axis("off")
 plt.show()
 ```
 #### 23. Merged the H, S, V, displays along with original image.
